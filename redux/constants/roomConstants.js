@@ -1,0 +1,3 @@
+export const ALL_ROOMS_SUCESS = 'ALL_ROOMS_SUCESS';
+export const ALL_ROOMS_FAILURE = 'ALL_ROOMS_FAILURE';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';
