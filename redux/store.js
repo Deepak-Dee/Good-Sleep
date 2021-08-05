@@ -25,7 +25,7 @@ const reducer = (state, action) => {
         return nextState
 
     } else {
-        return reducer(state, action)
+        return reducers(state, action)
     }
 
 }
@@ -34,4 +34,4 @@ const initStore = (state, action) => {
     return createStore(reducer, bindMiddleware([thunkMiddleware]))
 }
 
-export const wrapper = createWrapper(initStore)
+export const wrapper = createWrapper(initStore)                         

@@ -1,7 +1,7 @@
 import { ALL_ROOMS_SUCESS, ALL_ROOMS_FAILURE, CLEAR_ERRORS } from "../constants/roomConstants";
 
 //All room reducer
-export const allroomsReducer = (state={rooms:[]}, action) =>{
+export const allRoomsReducer = (state={rooms:[]}, action) =>{
     switch (action.type) {
         case ALL_ROOMS_SUCESS:
             return {

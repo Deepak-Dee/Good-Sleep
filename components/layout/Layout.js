@@ -14,7 +14,7 @@ const Layout = ({ children, title='Book best hotel for your holidays' }) => {
             </Head>
 
             <Header />
-            {children}
+            { children }
             <Footer />
 
         </div>
