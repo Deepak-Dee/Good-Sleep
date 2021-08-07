@@ -1,6 +1,6 @@
 import  ErrorHandler from '../utils/errorHandler';
 
-export default (err, req, res, next) => {
+export default (req, res, err ,next) => {
     err.statusCode = err.statusCode || 500;
 
     let error = {...err}

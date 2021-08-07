@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import RoomItem from './room/roomItem';
+import { toast } from 'react-toastify';
+
+const fetcher = data => data(url)
 
 const Home = () => {
 
   const { rooms } = useSelector(state => state.allRooms);
+
+  useEffect(() =>{
+    toast.error(error)
+  }, [])
 
   return(
     
@@ -17,7 +24,7 @@ const Home = () => {
         {rooms && rooms.length  === 0 ?
           <div className="alert alert-danger"><b>No room Found</b></div>
         :
-        rooms.map(room => (
+        rooms && rooms.map(room => (
           <RoomItem key={room.id} room={room} />
           ))
         }
