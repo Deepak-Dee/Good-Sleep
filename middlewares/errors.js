@@ -19,7 +19,6 @@ export default (req, res, err ,next) => {
         error = new ErrorHandler(message, 400);
     }
 
-
     res.status(err.statusCode).json({
         success: false,
         error,
